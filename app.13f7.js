@@ -62,7 +62,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "2775fabc1c6e9ecd47bb"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "13f7684e7701fd6acdd0"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -19880,7 +19880,7 @@ var Container = function (_Component) {
           _react2.default.createElement(
             'figure',
             { className: _content2.default.article_image },
-            _react2.default.createElement('img', { src: __webpack_require__(/*! @/img/general2.jpg */ "./src/img/general2.jpg"), alt: 'HOME IMGAGE' })
+            _react2.default.createElement('img', { src: __webpack_require__(/*! @/img/general2.png */ "./src/img/general2.png"), alt: 'HOME IMGAGE' })
           ),
           _react2.default.createElement(
             'h1',
@@ -20049,10 +20049,10 @@ var Sidebar = function (_Component) {
       e.preventDefault();
       _this.menu.classList.toggle('active');
       _this.ul.classList.toggle('active');
+      _this.ul.addEventListener('touchmove', function (ev) {
+        ev.preventDefault();
+      });
       _this.menubar.classList.toggle('active');
-      /* eslint-disable no-undef */
-      document.getElementsByTagName('body')[0].classList.toggle('active');
-      /* eslint-enable no-undef */
     };
 
     _this.a = '1';
@@ -20178,14 +20178,14 @@ module.exports = {"fadeInLeftBig":"sidebar-fadeInLeftBig_2CXbn","sidebar":"sideb
 
 /***/ }),
 
-/***/ "./src/img/general2.jpg":
+/***/ "./src/img/general2.png":
 /*!******************************!*\
-  !*** ./src/img/general2.jpg ***!
+  !*** ./src/img/general2.png ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/general2.jpg";
+module.exports = __webpack_require__.p + "img/general2.png";
 
 /***/ }),
 
@@ -20241,9 +20241,8 @@ if (true) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"active":"mian-active_1NR9k"};
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app.2775.js.map
+//# sourceMappingURL=app.13f7.js.map
